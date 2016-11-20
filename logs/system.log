@@ -1,0 +1,1285 @@
+2016-11-20 21:00:13,642 [Dummy-1:7700] [django.db.backends:89] [utils:execute] [DEBUG]- (0.005) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 21:00:13,709 [Dummy-1:7700] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 21:00:34,168 [Thread-2:5040] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'seesion' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [seesion] in "[{'False': False, 'None': None, 'True': True}, {'SITE_DESC': '开发路遥远，壮士需努力', 'DEFAULT_MESSAGE_LEVELS': {'INFO': 20, 'ERROR': 40, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'SITE_BLOG': 'http://www.roddypy.com', 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03C3CDD0>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03C1A540>>, 'SITE_TENCENT': '923401910', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03C1B7D0>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x03BA3978>>, 'SITE_NAME': '普拉多VX'}, {}, {'request': <WSGIRequest: GET '/'>}]"
+2016-11-20 21:01:15,874 [Thread-8:7904] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'seesion' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [seesion] in "[{'False': False, 'None': None, 'True': True}, {'SITE_DESC': '开发路遥远，壮士需努力', 'DEFAULT_MESSAGE_LEVELS': {'INFO': 20, 'ERROR': 40, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'SITE_BLOG': 'http://www.roddypy.com', 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03C2CC70>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03B62B28>>, 'SITE_TENCENT': '923401910', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03B7A030>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x03BA3DF8>>, 'SITE_NAME': '普拉多VX'}, {}, {'request': <WSGIRequest: GET '/'>}]"
+2016-11-20 21:56:30,108 [Dummy-1:3404] [django.db.backends:89] [utils:execute] [DEBUG]- (0.007) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 21:56:30,121 [Dummy-1:3404] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 21:57:40,371 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 21:57:40,386 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 21:57:40,436 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) PRAGMA foreign_keys; args=None
+2016-11-20 21:57:40,438 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys = 0; args=None
+2016-11-20 21:57:40,439 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 21:57:40,484 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE TABLE "blog_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "avatar" varchar(200) NULL, "qq" varchar(20) NULL, "mobile" varchar(11) NULL UNIQUE, "url" varchar(100) NULL, "wechat" varchar(200) NULL); (params None)
+2016-11-20 21:57:40,491 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.005) CREATE TABLE "blog_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "avatar" varchar(200) NULL, "qq" varchar(20) NULL, "mobile" varchar(11) NULL UNIQUE, "url" varchar(100) NULL, "wechat" varchar(200) NULL); args=None
+2016-11-20 21:57:40,495 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE TABLE "blog_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "blog_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id")); (params None)
+2016-11-20 21:57:40,497 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) CREATE TABLE "blog_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "blog_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id")); args=None
+2016-11-20 21:57:40,499 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE TABLE "blog_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "blog_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id")); (params None)
+2016-11-20 21:57:40,501 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) CREATE TABLE "blog_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "blog_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id")); args=None
+2016-11-20 21:57:40,502 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE UNIQUE INDEX "blog_user_groups_user_id_9046f296_uniq" ON "blog_user_groups" ("user_id", "group_id"); (params [])
+2016-11-20 21:57:40,508 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) CREATE UNIQUE INDEX "blog_user_groups_user_id_9046f296_uniq" ON "blog_user_groups" ("user_id", "group_id"); args=[]
+2016-11-20 21:57:40,509 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE INDEX "blog_user_groups_e8701ad4" ON "blog_user_groups" ("user_id"); (params [])
+2016-11-20 21:57:40,510 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) CREATE INDEX "blog_user_groups_e8701ad4" ON "blog_user_groups" ("user_id"); args=[]
+2016-11-20 21:57:40,511 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE INDEX "blog_user_groups_0e939a4f" ON "blog_user_groups" ("group_id"); (params [])
+2016-11-20 21:57:40,512 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) CREATE INDEX "blog_user_groups_0e939a4f" ON "blog_user_groups" ("group_id"); args=[]
+2016-11-20 21:57:40,513 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE UNIQUE INDEX "blog_user_user_permissions_user_id_1d3c1311_uniq" ON "blog_user_user_permissions" ("user_id", "permission_id"); (params [])
+2016-11-20 21:57:40,515 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) CREATE UNIQUE INDEX "blog_user_user_permissions_user_id_1d3c1311_uniq" ON "blog_user_user_permissions" ("user_id", "permission_id"); args=[]
+2016-11-20 21:57:40,517 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE INDEX "blog_user_user_permissions_e8701ad4" ON "blog_user_user_permissions" ("user_id"); (params [])
+2016-11-20 21:57:40,518 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) CREATE INDEX "blog_user_user_permissions_e8701ad4" ON "blog_user_user_permissions" ("user_id"); args=[]
+2016-11-20 21:57:40,518 [MainThread:2804] [django.db.backends.schema:101] [schema:execute] [DEBUG]- CREATE INDEX "blog_user_user_permissions_8373b171" ON "blog_user_user_permissions" ("permission_id"); (params [])
+2016-11-20 21:57:40,519 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) CREATE INDEX "blog_user_user_permissions_8373b171" ON "blog_user_user_permissions" ("permission_id"); args=[]
+2016-11-20 21:57:40,558 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys = 0; args=None
+2016-11-20 21:57:40,560 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 21:57:40,563 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 21:57:40,569 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('blog', '0001_initial', '2016-11-20 13:57:40.562628'); args=['blog', '0001_initial', '2016-11-20 13:57:40.562628']
+2016-11-20 21:57:40,599 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 21:57:40,605 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 21:57:40,623 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+2016-11-20 21:57:40,687 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2016-11-20 21:57:40,693 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2016-11-20 21:57:40,701 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+2016-11-20 21:57:40,708 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+2016-11-20 21:57:40,717 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3)
+2016-11-20 21:57:40,722 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2016-11-20 21:57:45,417 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(4,)
+2016-11-20 21:57:45,430 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message" FROM "django_admin_log" WHERE "django_admin_log"."content_type_id" IN (4) ORDER BY "django_admin_log"."action_time" DESC; args=(4,)
+2016-11-20 21:57:45,432 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 21:57:45,436 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) DELETE FROM "blog_user_user_permissions" WHERE "blog_user_user_permissions"."permission_id" IN (10, 11, 12); args=(10, 11, 12)
+2016-11-20 21:57:45,439 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) DELETE FROM "auth_group_permissions" WHERE "auth_group_permissions"."permission_id" IN (10, 11, 12); args=(10, 11, 12)
+2016-11-20 21:57:45,447 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.006) DELETE FROM "auth_permission" WHERE "auth_permission"."id" IN (12, 11, 10); args=(12, 11, 10)
+2016-11-20 21:57:45,451 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) DELETE FROM "django_content_type" WHERE "django_content_type"."id" IN (4); args=(4,)
+2016-11-20 21:57:45,492 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+2016-11-20 21:57:45,501 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2016-11-20 21:57:45,506 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2016-11-20 21:57:45,512 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+2016-11-20 21:57:45,522 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2016-11-20 21:57:45,528 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2016-11-20 21:57:45,535 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'user'); args=('blog', 'user')
+2016-11-20 21:57:45,540 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'user'); args=('blog', 'user')
+2016-11-20 21:57:45,542 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 21:57:45,548 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('blog', 'user'); args=['blog', 'user']
+2016-11-20 21:57:45,584 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
+2016-11-20 21:57:45,586 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 21:57:45,592 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add 用户', 7, 'add_user' UNION ALL SELECT 'Can change 用户', 7, 'change_user' UNION ALL SELECT 'Can delete 用户', 7, 'delete_user'; args=('Can add 用户', 7, 'add_user', 'Can change 用户', 7, 'change_user', 'Can delete 用户', 7, 'delete_user')
+2016-11-20 21:57:45,805 [MainThread:2804] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'blog'; args=('blog',)
+2016-11-20 21:58:11,452 [Dummy-1:8596] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 21:58:11,465 [Dummy-1:8596] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 21:58:18,134 [Thread-2:6396] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'seesion' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [seesion] in "[{'False': False, 'None': None, 'True': True}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x04182660>>, 'SITE_TENCENT': '923401910', 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20}, 'SITE_NAME': '普拉多VX', 'request': <WSGIRequest: GET '/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04180A50>, 'SITE_BLOG': 'http://www.roddypy.com', 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x033DCAE0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x041A9030>, 'SITE_DESC': '开发路遥远，壮士需努力'}, {}, {'request': <WSGIRequest: GET '/'>}]"
+2016-11-20 22:01:10,300 [Dummy-1:7132] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 22:01:10,312 [Dummy-1:7132] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 22:01:10,578 [Thread-2:8344] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:01:10.567500' AND "django_session"."session_key" = 'ihwijz19oqvgtq6lmhckqwyejdjg7723'); args=('2016-11-20 14:01:10.567500', 'ihwijz19oqvgtq6lmhckqwyejdjg7723')
+2016-11-20 22:01:10,592 [Thread-2:8344] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:01:10,670 [Thread-3:8668] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:01:10.661504' AND "django_session"."session_key" = 'ihwijz19oqvgtq6lmhckqwyejdjg7723'); args=('2016-11-20 14:01:10.661504', 'ihwijz19oqvgtq6lmhckqwyejdjg7723')
+2016-11-20 22:01:10,676 [Thread-3:8668] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:01:10,776 [Thread-3:8668] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x042AC430>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04253E70>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0427F4B0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x04247E88>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x0427F7F0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:10,802 [Thread-3:8668] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x042AC430>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04253E70>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0427F4B0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x04247E88>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x0427F7F0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:25,074 [Thread-9:9032] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:01:25.064020' AND "django_session"."session_key" = 'ihwijz19oqvgtq6lmhckqwyejdjg7723'); args=('2016-11-20 14:01:25.064020', 'ihwijz19oqvgtq6lmhckqwyejdjg7723')
+2016-11-20 22:01:25,080 [Thread-9:9032] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:01:25,088 [Thread-9:9032] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'admin'; args=('admin',)
+2016-11-20 22:01:25,264 [Thread-9:9032] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0429EDB0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03FC55F0>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x03FC5870>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0428E1E0>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x03BA0CF0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:25,270 [Thread-9:9032] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0429EDB0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03FC55F0>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x03FC5870>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0428E1E0>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x03BA0CF0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:28,933 [Thread-11:9100] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:01:28.924889' AND "django_session"."session_key" = 'ihwijz19oqvgtq6lmhckqwyejdjg7723'); args=('2016-11-20 14:01:28.924889', 'ihwijz19oqvgtq6lmhckqwyejdjg7723')
+2016-11-20 22:01:28,941 [Thread-11:9100] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:01:28,950 [Thread-11:9100] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'admin'; args=('admin',)
+2016-11-20 22:01:29,106 [Thread-11:9100] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0403FE10>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0403F8D0>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0403FB70>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0428EDF8>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x0403F3F0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:29,115 [Thread-11:9100] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0403FE10>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0403F8D0>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0403FB70>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0428EDF8>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x0403F3F0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:34,204 [Thread-12:4968] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:01:34.194092' AND "django_session"."session_key" = 'ihwijz19oqvgtq6lmhckqwyejdjg7723'); args=('2016-11-20 14:01:34.194092', 'ihwijz19oqvgtq6lmhckqwyejdjg7723')
+2016-11-20 22:01:34,211 [Thread-12:4968] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:01:34,219 [Thread-12:4968] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'admin'; args=('admin',)
+2016-11-20 22:01:34,388 [Thread-12:4968] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x044F11D0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x042B7DF0>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x042B7E50>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x04516030>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x042B7FB0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:34,393 [Thread-12:4968] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x044F11D0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x042B7DF0>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x042B7E50>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x04516030>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x042B7FB0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:40,955 [Thread-13:8416] [django.db.backends:89] [utils:execute] [DEBUG]- (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:01:40.944157' AND "django_session"."session_key" = 'ihwijz19oqvgtq6lmhckqwyejdjg7723'); args=('2016-11-20 14:01:40.944157', 'ihwijz19oqvgtq6lmhckqwyejdjg7723')
+2016-11-20 22:01:40,965 [Thread-13:8416] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:01:40,975 [Thread-13:8416] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'roddy'; args=('roddy',)
+2016-11-20 22:01:41,264 [Thread-13:8416] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x042BCDD0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x042BC2F0>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x042BC5F0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0428E270>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x042BCCD0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:01:41,273 [Thread-13:8416] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x042BCDD0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x042BC2F0>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x042BC5F0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0428E270>>, 'SITE_TENCENT': '923401910'}, {}, {'available_apps': [], 'title': 'Log in', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'site_name': '127.0.0.1:8000', 'site': <django.contrib.sites.requests.RequestSite object at 0x042BCCD0>, 'has_permission': False, 'LANGUAGE_CODE': 'en-us', 'next': '/admin/', 'site_title': 'My Blog', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'username': ''}]"
+2016-11-20 22:02:23,985 [MainThread:7876] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'samsung-pc'; args=('samsung-pc',)
+2016-11-20 22:02:32,032 [MainThread:2064] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'admin'; args=('admin',)
+2016-11-20 22:02:39,476 [MainThread:9192] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'roddy'; args=('roddy',)
+2016-11-20 22:03:03,835 [MainThread:8560] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'luodi'; args=('luodi',)
+2016-11-20 22:04:38,360 [MainThread:8832] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'admin'; args=('admin',)
+2016-11-20 22:04:56,809 [MainThread:8832] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 22:04:56,818 [MainThread:8832] [django.db.backends:89] [utils:execute] [DEBUG]- (0.005) INSERT INTO "blog_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "avatar", "qq", "mobile", "url", "wechat") VALUES ('pbkdf2_sha256$24000$gRlKsWnTtxj8$X6adg7gwD7vtUhhmTEtKHxrqkCBOMlh/rkc89hUDZVE=', NULL, 1, 'admin', '', '', 'admin@simpletour.com', 1, 1, '2016-11-20 14:04:56.688740', 'avatar/default.png', NULL, NULL, NULL, 'wechat/wechat.png'); args=['pbkdf2_sha256$24000$gRlKsWnTtxj8$X6adg7gwD7vtUhhmTEtKHxrqkCBOMlh/rkc89hUDZVE=', None, True, 'admin', '', '', 'admin@simpletour.com', True, True, '2016-11-20 14:04:56.688740', 'avatar/default.png', None, None, None, 'wechat/wechat.png']
+2016-11-20 22:05:07,257 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:05:07.246127' AND "django_session"."session_key" = 'ihwijz19oqvgtq6lmhckqwyejdjg7723'); args=('2016-11-20 14:05:07.246127', 'ihwijz19oqvgtq6lmhckqwyejdjg7723')
+2016-11-20 22:05:07,265 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:05:07,272 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'ihwijz19oqvgtq6lmhckqwyejdjg7723'; args=('ihwijz19oqvgtq6lmhckqwyejdjg7723',)
+2016-11-20 22:05:07,278 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 22:05:07,285 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('ihwijz19oqvgtq6lmhckqwyejdjg7723'); args=('ihwijz19oqvgtq6lmhckqwyejdjg7723',)
+2016-11-20 22:05:07,328 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."username" = 'admin'; args=('admin',)
+2016-11-20 22:05:07,470 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c' LIMIT 1; args=('2gx7m0be116boji8x239hwmyrylcxh5c',)
+2016-11-20 22:05:07,471 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 22:05:07,477 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '2gx7m0be116boji8x239hwmyrylcxh5c', 'MGFhNTU5ZGU2M2RiMmIwMTczYjM5NmY4OTY1NjBhYWFhOGI4OTNjODp7fQ==', '2016-12-04 14:05:07.471138'; args=('2gx7m0be116boji8x239hwmyrylcxh5c', 'MGFhNTU5ZGU2M2RiMmIwMTczYjM5NmY4OTY1NjBhYWFhOGI4OTNjODp7fQ==', '2016-12-04 14:05:07.471138')
+2016-11-20 22:05:07,513 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'; args=('2gx7m0be116boji8x239hwmyrylcxh5c',)
+2016-11-20 22:05:07,516 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 22:05:07,522 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2gx7m0be116boji8x239hwmyrylcxh5c',)
+2016-11-20 22:05:07,554 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 22:05:07,561 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) UPDATE "blog_user" SET "last_login" = '2016-11-20 14:05:07.553145' WHERE "blog_user"."id" = 1; args=('2016-11-20 14:05:07.553145', 1)
+2016-11-20 22:05:07,587 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 22:05:07,591 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) UPDATE "django_session" SET "session_data" = 'Njk5YWEyZWI0ZjE0YjA2YWI4ZDRjNGRiOTY2M2M0NTA3YTE1ZTY5Njp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiNjE2YTJjY2U3MGExY2Q5ZWMyNGU2NTM1ODVlOTE1MGRjYjFiYTVlMCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', "expire_date" = '2016-12-04 14:05:07.586146' WHERE "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'; args=('Njk5YWEyZWI0ZjE0YjA2YWI4ZDRjNGRiOTY2M2M0NTA3YTE1ZTY5Njp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiNjE2YTJjY2U3MGExY2Q5ZWMyNGU2NTM1ODVlOTE1MGRjYjFiYTVlMCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', '2016-12-04 14:05:07.586146', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:05:07,598 [Thread-14:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '2gx7m0be116boji8x239hwmyrylcxh5c', 'Njk5YWEyZWI0ZjE0YjA2YWI4ZDRjNGRiOTY2M2M0NTA3YTE1ZTY5Njp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiNjE2YTJjY2U3MGExY2Q5ZWMyNGU2NTM1ODVlOTE1MGRjYjFiYTVlMCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', '2016-12-04 14:05:07.586146'; args=('2gx7m0be116boji8x239hwmyrylcxh5c', 'Njk5YWEyZWI0ZjE0YjA2YWI4ZDRjNGRiOTY2M2M0NTA3YTE1ZTY5Njp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiNjE2YTJjY2U3MGExY2Q5ZWMyNGU2NTM1ODVlOTE1MGRjYjFiYTVlMCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', '2016-12-04 14:05:07.586146')
+2016-11-20 22:05:07,661 [Thread-15:2796] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:05:07.651151' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:05:07.651151', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:05:07,668 [Thread-15:2796] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:05:07,731 [Thread-15:2796] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x042B7BF0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03FC5390>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0126D228>>, 'SITE_TENCENT': '923401910'}, {}, {'has_permission': True, 'app_list': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03FC5770>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'available_apps': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03FC58B0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x037467B0>, 'site_title': 'My Blog', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'LANGUAGE_CODE': 'en-us', 'site_url': '/'}]"
+2016-11-20 22:05:07,736 [Thread-15:2796] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x042B7BF0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03FC5390>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0126D228>>, 'SITE_TENCENT': '923401910'}, {}, {'has_permission': True, 'app_list': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03FC5770>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'available_apps': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03FC58B0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x037467B0>, 'site_title': 'My Blog', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'LANGUAGE_CODE': 'en-us', 'site_url': '/'}]"
+2016-11-20 22:05:07,763 [Thread-15:2796] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "blog_user" ON ("django_admin_log"."user_id" = "blog_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+2016-11-20 22:05:10,331 [Thread-19:3392] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:05:10.324157' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:05:10.324157', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:05:10,341 [Thread-19:3392] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:05:10,347 [Thread-19:3392] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS "__count" FROM "blog_user"; args=()
+2016-11-20 22:05:10,359 [Thread-19:3392] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" ORDER BY "blog_user"."id" DESC; args=()
+2016-11-20 22:05:10,446 [Thread-19:3392] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errors] in 'None'
+2016-11-20 22:05:10,467 [Thread-19:3392] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in "[{'True': True, 'False': False, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x04259C48>>, 'None': None}]"
+2016-11-20 22:05:10,472 [Thread-19:3392] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_multipart] in 'None'
+2016-11-20 22:05:10,515 [Thread-19:3392] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+2016-11-20 22:05:10,678 [Thread-21:8744] [django.db.backends:89] [utils:execute] [DEBUG]- (0.008) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:05:10.660180' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:05:10.660180', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:05:10,712 [Thread-21:8744] [django.db.backends:89] [utils:execute] [DEBUG]- (0.012) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:05:13,369 [Thread-31:3136] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:05:13.360108' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:05:13.360108', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:05:13,379 [Thread-31:3136] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:05:13,454 [Thread-31:3136] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x040B3630>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x042A6870>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x01287780>>, 'SITE_TENCENT': '923401910'}, {}, {'has_permission': True, 'app_list': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x044F16B0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'available_apps': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x044F12D0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x037467B0>, 'site_title': 'My Blog', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'LANGUAGE_CODE': 'en-us', 'site_url': '/'}]"
+2016-11-20 22:05:13,465 [Thread-31:3136] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x040B3630>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x042A6870>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x01287780>>, 'SITE_TENCENT': '923401910'}, {}, {'has_permission': True, 'app_list': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x044F16B0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'available_apps': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x044F12D0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x037467B0>, 'site_title': 'My Blog', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'LANGUAGE_CODE': 'en-us', 'site_url': '/'}]"
+2016-11-20 22:05:13,494 [Thread-31:3136] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "blog_user" ON ("django_admin_log"."user_id" = "blog_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+2016-11-20 22:05:16,723 [Thread-36:7584] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:05:16.714310' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:05:16.714310', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:05:16,728 [Thread-36:7584] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:05:16,734 [Thread-36:7584] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS "__count" FROM "auth_group"; args=()
+2016-11-20 22:05:16,745 [Thread-36:7584] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" ORDER BY "auth_group"."name" ASC, "auth_group"."id" DESC; args=()
+2016-11-20 22:05:16,825 [Thread-36:7584] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errors] in 'None'
+2016-11-20 22:05:16,845 [Thread-36:7584] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in "[{'True': True, 'False': False, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0428ECD8>>, 'None': None}]"
+2016-11-20 22:05:16,851 [Thread-36:7584] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_multipart] in 'None'
+2016-11-20 22:05:16,986 [Thread-37:6320] [django.db.backends:89] [utils:execute] [DEBUG]- (0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:05:16.973303' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:05:16.973303', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:05:16,996 [Thread-37:6320] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:05:19,690 [Thread-39:8760] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:05:19.681417' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:05:19.681417', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:05:19,699 [Thread-39:8760] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:05:19,765 [Thread-39:8760] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x040ABFF0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x042BC0F0>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x01287300>>, 'SITE_TENCENT': '923401910'}, {}, {'has_permission': True, 'app_list': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x042BCDD0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'available_apps': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x042BC8F0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x037467B0>, 'site_title': 'My Blog', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'LANGUAGE_CODE': 'en-us', 'site_url': '/'}]"
+2016-11-20 22:05:19,771 [Thread-39:8760] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'SITE_NAME': '普拉多VX', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x040ABFF0>, 'SITE_DESC': '开发路遥远，壮士需努力', 'SITE_BLOG': 'http://www.roddypy.com', 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x042BC0F0>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x01287300>>, 'SITE_TENCENT': '923401910'}, {}, {'has_permission': True, 'app_list': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x042BCDD0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'available_apps': [{'app_url': '/admin/auth/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03746DF0>, 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x042BC8F0>, 'admin_url': '/admin/auth/group/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/auth/group/add/', 'object_name': 'Group'}], 'app_label': 'auth'}, {'app_url': '/admin/blog/', 'name': 'Blog', 'has_module_perms': True, 'models': [{'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'change': True, 'delete': True, 'add': True}, 'add_url': '/admin/blog/user/add/', 'object_name': 'User'}], 'app_label': 'blog'}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x037467B0>, 'site_title': 'My Blog', 'LANGUAGE_BIDI': False, 'site_header': 'Roddy 博客管理后台', 'LANGUAGE_CODE': 'en-us', 'site_url': '/'}]"
+2016-11-20 22:05:19,803 [Thread-39:8760] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "blog_user" ON ("django_admin_log"."user_id" = "blog_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+2016-11-20 22:09:09,242 [Thread-43:6192] [django.db.backends:89] [utils:execute] [DEBUG]- (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:09:09.230389' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:09:09.230389', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:09:09,258 [Thread-43:6192] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:09:09,270 [Thread-43:6192] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS "__count" FROM "blog_user"; args=()
+2016-11-20 22:09:09,280 [Thread-43:6192] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" ORDER BY "blog_user"."id" DESC; args=()
+2016-11-20 22:09:09,367 [Thread-43:6192] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errors] in 'None'
+2016-11-20 22:09:09,389 [Thread-43:6192] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in "[{'True': True, 'False': False, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0126D198>>, 'None': None}]"
+2016-11-20 22:09:09,396 [Thread-43:6192] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_multipart] in 'None'
+2016-11-20 22:09:09,436 [Thread-43:6192] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+2016-11-20 22:09:09,540 [Thread-44:7436] [django.db.backends:89] [utils:execute] [DEBUG]- (0.007) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:09:09.523406' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:09:09.523406', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:09:09,548 [Thread-44:7436] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:09:10,667 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:09:10.657452' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:09:10.657452', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:09:10,677 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:09:10,680 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 22:09:10,684 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:09:10,725 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "auth_group"."id" FROM "auth_group" INNER JOIN "blog_user_groups" ON ("auth_group"."id" = "blog_user_groups"."group_id") WHERE "blog_user_groups"."user_id" = 1; args=(1,)
+2016-11-20 22:09:10,732 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."id" FROM "auth_permission" INNER JOIN "blog_user_user_permissions" ON ("auth_permission"."id" = "blog_user_user_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "blog_user_user_permissions"."user_id" = 1 ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2016-11-20 22:09:10,765 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'user'); args=('blog', 'user')
+2016-11-20 22:09:10,901 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" ORDER BY "auth_group"."name" ASC; args=()
+2016-11-20 22:09:10,917 [Thread-45:8692] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'model\': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03BF4870>, \'can_add_related\': True, \'url_params\': \'_to_field=id&_popup=1\', \'add_related_url\': \'/admin/auth/group/add/\', \'name\': \'groups\', \'widget\': \'<select multiple="multiple" id="id_groups" name="groups">\\n</select>\'}, {\'block\': <Block Node: links. Contents: [<TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n    \'>]>}]'
+2016-11-20 22:09:10,924 [Thread-45:8692] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'model\': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03BF4870>, \'can_add_related\': True, \'url_params\': \'_to_field=id&_popup=1\', \'add_related_url\': \'/admin/auth/group/add/\', \'name\': \'groups\', \'widget\': \'<select multiple="multiple" id="id_groups" name="groups">\\n</select>\'}, {\'block\': <Block Node: links. Contents: [<TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n    \'>]>}]'
+2016-11-20 22:09:10,938 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=()
+2016-11-20 22:09:10,944 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 1; args=(1,)
+2016-11-20 22:09:10,949 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 1; args=(1,)
+2016-11-20 22:09:10,954 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 1; args=(1,)
+2016-11-20 22:09:10,959 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 3; args=(3,)
+2016-11-20 22:09:10,966 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 3; args=(3,)
+2016-11-20 22:09:10,971 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 3; args=(3,)
+2016-11-20 22:09:10,976 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 2; args=(2,)
+2016-11-20 22:09:10,983 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 2; args=(2,)
+2016-11-20 22:09:10,991 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 2; args=(2,)
+2016-11-20 22:09:11,000 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 7; args=(7,)
+2016-11-20 22:09:11,005 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 7; args=(7,)
+2016-11-20 22:09:11,010 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 7; args=(7,)
+2016-11-20 22:09:11,015 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 5; args=(5,)
+2016-11-20 22:09:11,019 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 5; args=(5,)
+2016-11-20 22:09:11,025 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 5; args=(5,)
+2016-11-20 22:09:11,034 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 6; args=(6,)
+2016-11-20 22:09:11,042 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 6; args=(6,)
+2016-11-20 22:09:11,047 [Thread-45:8692] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 6; args=(6,)
+2016-11-20 22:09:11,059 [Thread-45:8692] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'widget\': \'<select multiple="multiple" id="id_user_permissions" name="user_permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="7">auth | group | Can add group</option>\\n<option value="8">auth | group | Can change group</option>\\n<option value="9">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="19">blog | 用户 | Can add 用户</option>\\n<option value="20">blog | 用户 | Can change 用户</option>\\n<option value="21">blog | 用户 | Can delete 用户</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select>\', \'url_params\': \'_to_field=id&_popup=1\', \'model\': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03BF4630>, \'name\': \'user_permissions\'}, {\'block\': <Block Node: links. Contents: [<TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n    \'>]>}]'
+2016-11-20 22:09:11,063 [Thread-45:8692] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_add_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_add_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_add_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_add_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_add_related] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'widget\': \'<select multiple="multiple" id="id_user_permissions" name="user_permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="7">auth | group | Can add group</option>\\n<option value="8">auth | group | Can change group</option>\\n<option value="9">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="19">blog | 用户 | Can add 用户</option>\\n<option value="20">blog | 用户 | Can change 用户</option>\\n<option value="21">blog | 用户 | Can delete 用户</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select>\', \'url_params\': \'_to_field=id&_popup=1\', \'model\': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03BF4630>, \'name\': \'user_permissions\'}, {\'block\': <Block Node: links. Contents: [<TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n    \'>]>}]'
+2016-11-20 22:09:11,068 [Thread-45:8692] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'widget\': \'<select multiple="multiple" id="id_user_permissions" name="user_permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="7">auth | group | Can add group</option>\\n<option value="8">auth | group | Can change group</option>\\n<option value="9">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="19">blog | 用户 | Can add 用户</option>\\n<option value="20">blog | 用户 | Can change 用户</option>\\n<option value="21">blog | 用户 | Can delete 用户</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select>\', \'url_params\': \'_to_field=id&_popup=1\', \'model\': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03BF4630>, \'name\': \'user_permissions\'}, {\'block\': <Block Node: links. Contents: [<TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n    \'>]>}]'
+2016-11-20 22:09:11,258 [Thread-47:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.008) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:09:11.242485' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:09:11.242485', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:09:11,271 [Thread-47:4756] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:09:42,556 [Thread-53:6008] [django.db.backends:89] [utils:execute] [DEBUG]- (0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:09:42.534638' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:09:42.534638', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:09:42,583 [Thread-53:6008] [django.db.backends:89] [utils:execute] [DEBUG]- (0.008) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:09:42,587 [Thread-53:6008] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2016-11-20 22:09:42,637 [Thread-53:6008] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+2016-11-20 22:09:42,759 [Thread-53:6008] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=()
+2016-11-20 22:09:42,785 [Thread-53:6008] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'widget\': \'<select multiple="multiple" class="selectfilter" id="id_permissions" name="permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="7">auth | group | Can add group</option>\\n<option value="8">auth | group | Can change group</option>\\n<option value="9">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="19">blog | 用户 | Can add 用户</option>\\n<option value="20">blog | 用户 | Can change 用户</option>\\n<option value="21">blog | 用户 | Can delete 用户</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select><script type="text/javascript">addEvent(window, "load", function(e) {SelectFilter.init("id_permissions", "permissions", 0); });</script>\\n\', \'url_params\': \'_to_field=id&_popup=1\', \'model\': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03BF4630>, \'name\': \'permissions\'}, {\'block\': <Block Node: links. Contents: [<TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n    \'>]>}]'
+2016-11-20 22:09:42,790 [Thread-53:6008] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_add_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_add_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_add_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_add_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_add_related] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'widget\': \'<select multiple="multiple" class="selectfilter" id="id_permissions" name="permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="7">auth | group | Can add group</option>\\n<option value="8">auth | group | Can change group</option>\\n<option value="9">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="19">blog | 用户 | Can add 用户</option>\\n<option value="20">blog | 用户 | Can change 用户</option>\\n<option value="21">blog | 用户 | Can delete 用户</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select><script type="text/javascript">addEvent(window, "load", function(e) {SelectFilter.init("id_permissions", "permissions", 0); });</script>\\n\', \'url_params\': \'_to_field=id&_popup=1\', \'model\': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03BF4630>, \'name\': \'permissions\'}, {\'block\': <Block Node: links. Contents: [<TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n    \'>]>}]'
+2016-11-20 22:09:42,798 [Thread-53:6008] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'widget\': \'<select multiple="multiple" class="selectfilter" id="id_permissions" name="permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="7">auth | group | Can add group</option>\\n<option value="8">auth | group | Can change group</option>\\n<option value="9">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="19">blog | 用户 | Can add 用户</option>\\n<option value="20">blog | 用户 | Can change 用户</option>\\n<option value="21">blog | 用户 | Can delete 用户</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select><script type="text/javascript">addEvent(window, "load", function(e) {SelectFilter.init("id_permissions", "permissions", 0); });</script>\\n\', \'url_params\': \'_to_field=id&_popup=1\', \'model\': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03BF4630>, \'name\': \'permissions\'}, {\'block\': <Block Node: links. Contents: [<TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n        \'>, <IfNode>, <TextNode: \'\\n    \'>]>}]'
+2016-11-20 22:09:42,890 [Thread-54:5300] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-20 14:09:42.879657' AND "django_session"."session_key" = '2gx7m0be116boji8x239hwmyrylcxh5c'); args=('2016-11-20 14:09:42.879657', '2gx7m0be116boji8x239hwmyrylcxh5c')
+2016-11-20 22:09:42,905 [Thread-54:5300] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."qq", "blog_user"."mobile", "blog_user"."url", "blog_user"."wechat" FROM "blog_user" WHERE "blog_user"."id" = 1; args=(1,)
+2016-11-20 22:10:57,901 [Dummy-1:9164] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 22:10:57,915 [Dummy-1:9164] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 22:11:18,698 [Dummy-1:6656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 22:11:18,713 [Dummy-1:6656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 22:12:14,708 [Dummy-1:8904] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 22:12:14,727 [Dummy-1:8904] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 22:12:29,223 [Dummy-1:8464] [django.db.backends:89] [utils:execute] [DEBUG]- (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2016-11-20 22:12:29,253 [Dummy-1:8464] [django.db.backends:89] [utils:execute] [DEBUG]- (0.018) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2016-11-20 22:27:12,364 [Thread-2:8544] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'seesion' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'seesion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samsung-pc\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [seesion] in "[{'False': False, 'True': True, 'None': None}, {'SITE_BLOG': 'http://www.roddypy.com', 'SITE_NAME': '普拉多VX', 'SITE_DESC': '开发路遥远，壮士需努力', 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0424EA30>, 'SITE_TENCENT': '923401910', 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0422DA50>>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04231470>, 'DEFAULT_MESSAGE_LEVELS': {'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40, 'DEBUG': 10}, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x04220030>>}, {}, {'request': <WSGIRequest: GET '/'>}]"
