@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'roddyblog',
         'HOST': '127.0.0.1',
         'PORT':3306,
-        'USERNAME':'root',
+        'USER':'root',
         'PASSWORD':'roddy',
     }
 }
@@ -129,6 +129,10 @@ AUTH_USER_MODEL = 'blog.User'
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = '/uploads/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 
@@ -141,6 +145,7 @@ SITE_TENCENT="923401910"
 SITE_BLOG="http://www.roddypy.com"
 
 # 自定义日志输出信息
+'''
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -217,3 +222,4 @@ LOGGING = {
         },
     }
 }
+'''

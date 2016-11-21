@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.conf import settings
+from blog.models import *
 
 
 def global_setting(request):
@@ -9,5 +10,6 @@ def global_setting(request):
             'SITE_BLOG':"http://www.roddypy.com",}
 
 def index(request):
-
+    if request.method == 'GET':
+        category_list=Category.objects.all()
     return render(request, 'index.html', locals())
