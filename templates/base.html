@@ -53,7 +53,7 @@
             </div>
         </div>
 	</header>
-	<!-- end header -->
+	<!-- end header
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
@@ -65,6 +65,32 @@
 			</div>
 		</div>
 	</div>
+	</section>-->
+	<section id="featured">
+            <!-- start slider -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+            <!-- Slider -->
+                <div id="main-slider" class="flexslider">
+                    <ul class="slides">
+                        {% for ad in Ad_list %}
+                              <li>
+                                <img src="/uploads/{{ ad.image_url }}" alt="" />
+                                <div class="flex-caption">
+                                    <h3>{{ ad.title }}</h3>
+                                    <p>{{ ad.description }}</p>
+                                    <a href="{{ ad.callback_url }}" class="btn btn-theme">了解详情</a>
+                                </div>
+                              </li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            <!-- end slider -->
+                    </div>
+                </div>
+            </div>
 	</section>
 	<section id="content">
 	<div class="container">

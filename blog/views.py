@@ -1,6 +1,8 @@
+#:coding:utf8
 from django.shortcuts import render
 from django.conf import settings
 from blog.models import *
+from django.core.paginator import Paginator, InvalidPage, EmptyPage, PageNotAnInteger
 
 
 def global_setting(request):
@@ -11,5 +13,18 @@ def global_setting(request):
 
 def index(request):
     if request.method == 'GET':
+        #分类数据
         category_list=Category.objects.all()
+        #广告轮播数据
+        Ad_list = Ad.objects.all()
+        #文章列表
+        Article_list = Article.objects.all()
+
+        paginator = Paginator(Article_list,10)
+        try:
+            page = int(request.GET.get('page', 1))
+            Article_list = paginator.page(page)
+        except (EmptyPage, InvalidPage, PageNotAnInteger):
+            Article_list = paginator.page(1)
+
     return render(request, 'index.html', locals())

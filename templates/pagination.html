@@ -1,0 +1,13 @@
+<div id="pagination">
+    {% if Article_list.has_previous %}
+    <a href="?page={{ Article_list.previous_page_number }}{% if request.GET.year %}&year={{ request.GET.year }}{% endif %}{% if request.GET.month %}&month={{ request.GET.month }}{% endif %}{% if request.GET.cid %}&cid={{ request.GET.cid }}{% endif %}">&laquo;上一页</a>
+    {% else %}
+    &laquo;上一页
+    {% endif %}
+     {{ Article_list.number }}/{{ Article_list.paginator.num_pages }}
+    {% if Article_list.has_next %}
+      <a href="?page={{ Article_list.next_page_number }}{% if request.GET.year %}&year={{ request.GET.year }}{% endif %}{% if request.GET.month %}&month={{ request.GET.month }}{% endif %}{% if request.GET.cid %}&cid={{ request.GET.cid }}{% endif %}">下一页 &raquo;</a>
+    {% else %}
+      下一页 &raquo;
+    {% endif %}
+</div>
