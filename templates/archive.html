@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block Content  %}
+    {% for ac in Article_list %}
+        <article>
+            <div class="post-quote">
+                <div class="post-heading">
+                    <h3><a href="#">{{ ac.title }}</a></h3>
+                </div>
+                <blockquote>
+                    <i class="icon-quote-left"></i> {{ ac.desc }}
+                </blockquote>
+            </div>
+            <div class="bottom-article">
+                <ul class="meta-post">
+                    <li><i class="icon-calendar"></i><a href="#"> {{ ac.date_publish|date:"Y-m-d H:i:s" }}</a></li>
+                    <li><i class="icon-user"></i><a href="#"> {{ ac.user }}</a></li>
+                    <li><i class="icon-folder-open"></i><a href="#">{{ ac.click_count }}</a></li>
+                    <li><i class="icon-comments"></i><a href="#">{{ ac.comment_set.all.count }} Comments</a></li>
+                </ul>
+                <a href="#" class="pull-right">阅读全文 <i class="icon-angle-right"></i></a>
+            </div>
+    </article>
+    {% endfor %}
+    {% include 'pagination.html' %}
+
+{% endblock %}
